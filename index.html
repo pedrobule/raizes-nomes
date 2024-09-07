@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top pt-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Raízes dos Nomes</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-journal me-1"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#nomes" class="nav-link">
+                            <i class="bi bi-card-list me-1"></i>
+                            Nomes
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobrenomes" class="nav-link">
+                            <i class="bi bi-book me-1"></i>
+                            Sobrenomes
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#busca" class="nav-link">
+                            <i class="bi bi-search me-1"></i>
+                            Pesquisa
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 mapa">
+                            <img src="./images/mapa.gif" class="d-blow w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 my-md-0 text-justify">
+                            <h2 class="section-title">Sobre <span class="text-colored">Raízes dos Nomes</span></h2>
+                            <p id="paragrafo-sobre">
+                                Descubra a história por trás do seu nome no Raízes dos Nomes, seu portal completo para explorar o mundo dos nomes e sobrenomes!
+                            </p>
+                            <p id="paragrafo-sobre">
+                                Já se perguntou qual é o significado do seu nome? Ou talvez queira saber a origem do sobrenome da sua família? No Raízes dos Nomes, você encontrará todas as respostas que procura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nomes" class="pt-3 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <h1 class="section-title text-center"> Top 10 <span class="text-colored">Nomes</span> mais populares no Brasil</h1>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 pt-5">
+                        <nav class="nav nav-pills flex-column nav-nomes">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#maria" class=" fw-bold text-start nav-link text-colored active">Maria</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jose" class=" fw-bold text-start nav-link text-colored ">Jose</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#antonio" class=" fw-bold text-start nav-link text-colored ">Antonio</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#francisco" class=" fw-bold text-start nav-link text-colored">Francisco</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#joao" class=" fw-bold text-start nav-link text-colored ">João</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#manoel" class=" fw-bold text-start nav-link text-colored ">Manoel</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sebastiao" class=" fw-bold text-start nav-link text-colored">Sebastião</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bento" class=" fw-bold text-start nav-link text-colored ">Bento</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#batista" class=" fw-bold text-start nav-link text-colored ">Batista</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10 pt-5">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="maria">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div id="paragrafo-nomes">
+                                            <p>
+                                                <h2>MARIA</h2> É um dos nomes femininos mais populares e antigos do mundo, com uma rica história e diversos significados. Sua origem é incerta e objeto de diversas interpretações, mas a mais comum associa-o ao hebraico Miriam, que significa senhora, soberana, ou estrela do mar.
+                                            </p>
+                                            <p>
+                                                <b>Diversidade de Significados:</b> Ao longo dos séculos, o nome Maria adquiriu diversos significados e nuances dependendo da cultura e da época:
+                                            </p>
+                                            <p>
+                                                <b>Religioso:</b> No cristianismo, Maria é o nome da mãe de Jesus e é reverenciada como a Virgem Maria. Essa associação religiosa elevou o nome a um status de santidade e pureza.
+                                            </p>
+                                            <p>
+                                                <b>Linguístico:</b>  A etimologia do nome Maria é complexa e envolve diversas línguas antigas, como hebraico, aramaico e egípcio. Cada uma dessas línguas contribuiu com suas próprias interpretações para o significado do nome.
+                                            </p>
+                                            <p>
+                                                <b>Cultural:</b> Em diferentes culturas, o nome Maria carrega consigo simbolismos e significados específicos. Por exemplo, na cultura árabe, Maria é vista como um símbolo de beleza e virtude.
+                                            </p>
+                                            <p>
+                                                <b>Significado Simbólico:</b> Além dos significados mais diretos, o nome Maria também carrega consigo um simbolismo profundo. É frequentemente associado a:
+                                            </p>
+                                            <p>
+                                                <b>Feminilidade:</b> Maria representa a força, a beleza e a maternidade.
+                                            </p>
+                                            <p>
+                                                <b>Fé:</b> Como a mãe de Jesus, Maria é um símbolo de fé e devoção.
+                                            </p>
+                                            <p>
+                                                <b>Pureza:</b> A Virgem Maria é frequentemente associada à pureza e à castidade.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jose">
+                                <div class="row">
+                                    <div class="col-md-10">            
+                                        <div id="paragrafo-nomes">
+                                            <h2>JOSÉ</h2>
+                                            <p>
+                                                O nome José é outro clássico que carrega consigo uma rica história e diversos significados. Assim como Maria, sua origem e significado variam dependendo da cultura e da época.
+                                            </p>
+                                            <p>
+                                                <b>Origem e Significado:</b> Hebraico: A origem mais comum do nome José é o hebraico Yosef, que significa
+                                                Deus acrescenta; ou ;aquele que acrescenta;. Essa interpretação indica uma
+                                                pessoa abençoada com prosperidade e crescimento.
+                                                Outras Culturas: Em outras culturas, o nome José pode ter significados
+                                                ligeiramente diferentes, mas sempre associados a qualidades positivas como
+                                                generosidade, sabedoria e proteção.
+                                            </p>
+                                            <p>
+                                                Na cultura popular, o nome José está frequentemente associado a:
+                                            </p>
+                                            <p>
+                                                <b>Paternidade:</b> José, o esposo de Maria e pai adotivo de Jesus, é um símbolo de
+                                                paternidade e proteção.
+                                            </p>
+                                            <p>
+                                                <b>Sonhador:</b> José, nos relatos bíblicos, era conhecido por ter sonhos proféticos.
+                                                Por isso, o nome também pode ser associado à capacidade de ter visões e de
+                                                interpretar sonhos.
+                                            </p>
+                                            <p>
+                                                <b>Trabalhador:</b> Como carpinteiro, José é um exemplo de trabalhador dedicado e
+                                                honesto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="antonio">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>ANTÔNIO</h2>
+                                            <p>
+                                                É um nome com uma rica história e diversos significados, sendo um dos mais populares em diversas culturas. Sua origem é um pouco incerta, mas as principais teorias apontam para:
+                                            </p>
+                                            <p>
+                                                <b>Latim:</b> A origem mais comum é o latim Antonius, que pode ter diversas
+                                                interpretações, como inestimável, de valor inestimável, digno de apreço
+                                                ou até mesmo alimentado de flores.
+                                            </p>
+                                            <p>
+                                                <b>Grego:</b> Outra possibilidade é que o nome tenha origem no grego anthos, que
+                                                significa flor. Essa interpretação confere ao nome um significado poético e
+                                                delicado.
+                                            </p>
+                                            <p>
+                                                O nome Antônio evoca diversas qualidades e características, como:
+                                            </p>
+                                            <p>
+                                                Valor: A associação com inestimável indica alguém de grande valor e importância. Beleza: A conexão com flor sugere uma pessoa bela e delicada. Força: O nome também pode ser associado à força e à determinação, como no caso de Marco Antônio, um importante personagem da história romana.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="francisco">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>FRANCISCO</h2>
+                                            <p>
+                                                É um nome com uma rica história e um significado que evoca força e liberdade. Sua origem remonta ao latim Franciscus, derivado do germânico Frank, que significa franco. Assim, o nome Francisco pode ser traduzido como francês livre ou aquele que vem da França.
+                                            </p>
+                                            <p>
+                                                <b>Significado e Simbolismo:</b>
+                                            </p>
+                                            <p>
+                                                <b>Liberdade:</b> A palavra franco está intimamente ligada à ideia de liberdade.
+                                                Pessoas com o nome Francisco são frequentemente associadas a indivíduos
+                                                independentes, com espírito livre e que valorizam a autonomia.
+                                            </p>
+                                            <p>
+                                                <b>Força:</b> A origem germânica do nome também sugere força e determinação.
+                                                Francos eram povos germânicos conhecidos por sua coragem e habilidades
+                                                militares.
+                                            </p>
+                                            <p>
+                                                <b>Origem:</b> O nome evoca a ideia de origem e raízes. Embora não signifique
+                                                necessariamente que a pessoa seja descendente de franceses, indica uma
+                                                conexão com a cultura e história desse povo.
+                                            </p>
+                                            <p>
+                                                <b>São Francisco de Assis:</b> Um dos mais famosos portadores desse nome é São Francisco de Assis, um santo
+                                                católico conhecido por sua humildade, amor à natureza e pela fundação da Ordem
+                                                Franciscana. Sua vida e ensinamentos influenciaram profundamente a história da
+                                                Igreja Católica e inspiraram gerações de pessoas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="joao">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>JOÃO</h2>
+                                            <p>
+                                                É um dos nomes mais populares e tradicionais em diversas culturas, especialmente na cultura portuguesa e em países com influência portuguesa. Sua origem é hebraica, vindo de Yohanan, que significa Deus é gracioso ou agraciado por Deus.
+                                            </p>
+                                            <p>
+                                                <b>Significado e Simbolismo:</b> 
+                                            </p>
+                                            <p>
+                                                <b>Graça Divina:</b> A principal associação do nome João é com a graça divina. Ele
+                                                evoca a ideia de alguém abençoado por Deus, com uma vida repleta de
+                                                bênçãos.
+                                            </p>
+                                            <p>
+                                                <b>Liderança:</b> João Batista, um dos personagens bíblicos mais importantes com
+                                                esse nome, era um líder carismático e um profeta. Essa associação fortalece a
+                                                ideia de que João é um nome que pode indicar liderança e força de caráter.
+                                            </p>
+                                            <p>
+                                                <b>Simplicidade:</b> Simplicidade: Ao mesmo tempo em que evoca ideias de grandeza e
+                                                espiritualidade, o nome João também é associado à simplicidade e à
+                                                humildade.
+                                            </p>
+                                            <p>
+                                                <b>Variações:</b> O nome João possui diversas variações em diferentes idiomas, como
+                                                John em inglês, Juan em espanhol, Jean em francês e Giovanni em italiano.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="manoel">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>MANOEL</h2>
+                                            <p>
+                                                É uma variante do nome Emanuel, que por sua vez tem origem hebraica. O nome completo, Emanuel, significa Deus está conosco.
+                                            </p>
+                                            <p>
+                                                A raiz do nome está no hebraico Immanuel, composto por Immanu (conosco) e El (Deus). A principal interpretação é Deus está conosco, indicando uma profunda conexão espiritual e proteção divina.
+                                            </p>
+                                            <p>
+                                                Manoel é uma forma mais popular em algumas regiões, especialmente em países de língua portuguesa como Brasil e Portugal. Outras variantes incluem Manuel, Emanuel, Manuelo e Manolo. Religiosa: A forte conotação religiosa do nome, associada à figura de Jesus Cristo, contribuiu para sua ampla disseminação e popularidade. O nome Manoel foi bastante comum entre a nobreza europeia e, com a colonização, chegou às Américas, tornando-se um nome popular em diversos países.
+                                            </p>
+                                            <p>
+                                                A principal característica associada ao nome Manoel é a fé e a espiritualidade. O significado Deus está conosco evoca a ideia de proteção divina. O nome Manoel é frequentemente associado à tradição e aos valores familiares.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sebastiao">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>SEBASTIÃO</h2>
+                                            <p>
+                                                É um nome com uma sonoridade forte e um significado repleto de história e tradição. Sua origem remonta ao grego Sebastianós, derivado de sebastós, que significa venerável, sagrado ou reverenciado. Essa palavra era utilizada pelos gregos para se referir aos imperadores romanos, traduzindo o título latino Augusto.
+                                            </p>
+                                            <p>
+                                                A principal associação do nome Sebastião é com a veneração e o respeito. Ele evoca a imagem de uma pessoa digna de admiração e reverência. A conexão com os imperadores romanos confere ao nome um sentido de força, poder e autoridade. O significado sagrado indica uma ligação com o divino e uma pessoa devota.
+                                            </p>
+                                            <p>
+                                                <b>História e Cultura:</b> Um dos santos mais populares da Igreja Católica, São Sebastião,
+                                                era um oficial romano que foi martirizado por sua fé cristã. Sua imagem,
+                                                frequentemente representada com flechas cravadas no corpo, tornou-se um
+                                                símbolo de resistência e fé. Na história de Portugal, Dom Sebastião, um rei que
+                                                desapareceu em batalha, tornou-se uma figura lendária e objeto de um culto
+                                                messiânico conhecido como Sebastianismo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bento">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>BENTO</h2>
+                                            <p>
+                                                É uma forma abreviada de Benedito, que por sua vez tem origem no latim Benedictus, significando bendito ou abençoado. É um nome carregado de positividade e espiritualidade.
+                                            </p>
+                                            <p>
+                                                <b>Significado e Simbolismo:</b> A principal associação do nome Bento é com a bênção divina. É um
+                                                nome que evoca a ideia de alguém que nasceu sob uma estrela sortuda,
+                                                protegido e abençoado. A palavra bendito carrega uma conotação extremamente
+                                                positiva, associada à felicidade, à boa sorte e ao sucesso. A origem latina e a conexão com o termo benedito conferem
+                                                ao nome uma forte carga espiritual, associando-o à fé e à devoção.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="batista">
+                                <div class="row">
+                                    <div class="col-md-10">                                        
+                                        <div id="paragrafo-nomes">
+                                            <h2>BATISTA</h2>
+                                            <p>
+                                                É um nome com uma rica história e um significado profundamente religioso. Derivado do grego baptistés, que significa aquele que batiza, o nome Batista está intimamente ligado ao sacramento do batismo e à figura de João Batista, um dos personagens mais importantes do Novo Testamento.
+                                            </p>
+                                            <p>
+                                                <b>Significado e Simbolismo:</b> O significado mais direto do nome é &quot;aquele que batiza&quot;. João Batista,
+                                                por exemplo, era conhecido por batizar pessoas no rio Jordão, preparando o
+                                                caminho para a chegada de Jesus Cristo. O batismo é um sacramento de purificação e renovação espiritual.
+                                                Assim, o nome Batista também pode ser associado à ideia de pureza,
+                                                renovação e novo começo. João Batista era um profeta, um mensageiro de Deus. Essa associação
+                                                confere ao nome Batista um sentido de missão e vocação.
+                                            </p>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobrenomes" class="pt-5 pb-5 nomes-color">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-title text-center"> Top 10 <span class="text-colored">Sobrenomes</span>  mais populares no Brasil</h1>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 pt-5 pb-5">
+                        <nav class="nav nav-pills flex-column nav-nomes">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#silva" class=" fw-bold text-start nav-link text-colored active">Silva</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#santos" class=" fw-bold text-start nav-link text-colored ">Santos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#souza" class=" fw-bold text-start nav-link text-colored ">Souza</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#oliveira" class=" fw-bold text-start nav-link text-colored">Oliveira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pereira" class=" fw-bold text-start nav-link text-colored ">Pereira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#rodrigues" class=" fw-bold text-start nav-link text-colored ">Rodrigues</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fernandes" class=" fw-bold text-start nav-link text-colored">Fernandes</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#almeida" class=" fw-bold text-start nav-link text-colored ">Almeida</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#costa" class=" fw-bold text-start nav-link text-colored ">Costa</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lima" class=" fw-bold text-start nav-link text-colored ">Lima</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10 pt-5">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="silva">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/silva.jpg" alt="Emblema da família Silva" class="content-image">
+                                        <div class="content-text">
+                                            <h2>A Origem do Sobrenome Silva: Uma Jornada pela História</h2>
+                                            </h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Silva, um dos mais comuns em países de língua portuguesa, como Brasil e Portugal, possui uma história rica e interessante. Sua origem remonta ao latim "silva", que significa "floresta", "selva" ou "bosque".
+                                                </p>
+                                                <h4>As Raízes do Sobrenome</h4>
+                                                <p>A conexão entre o sobrenome e a natureza é bastante evidente. Acredita-se que o sobrenome tenha sido atribuído inicialmente a pessoas que viviam em regiões florestadas ou que trabalhavam com a madeira. Com o tempo, essa identificação com a natureza se transformou em um sobrenome de família, transmitido de geração em geração.
+                                                </p>
+                                                <h4>A Popularização em Portugal e Brasil</h4>
+                                                <p>O sobrenome Silva se popularizou significativamente em Portugal, tornando-se o sobrenome mais comum no país. Com a colonização do Brasil, muitos portugueses, inclusive aqueles com o sobrenome Silva, imigraram para o Brasil, contribuindo para a disseminação do sobrenome por aqui.
+                                                </p>
+                                                <h4>Teorias sobre a Popularidade</h4>
+                                                <p>
+                                                Existem algumas teorias sobre a ampla disseminação do sobrenome Silva:   
+                                                <p> 
+                                                    <b>Origem toponímica:</b> 
+                                                    A ligação com a natureza e a geografia fez com que o sobrenome fosse adotado por pessoas de diversas regiões, especialmente em áreas rurais.
+                                                </p>
+                                                <p>
+                                                    <b>Distinção social:</b> 
+                                                    Em algumas regiões, o sobrenome Silva era utilizado para diferenciar pessoas que viviam em áreas mais rurais (a "silva") daquelas que viviam nas cidades ou nas zonas costeiras.
+                                                </p>
+                                                <p>
+                                                    <b>História:</b> 
+                                                    Durante o período colonial, muitos escravizados receberam o sobrenome Silva, contribuindo para a sua ampla disseminação..</p>  
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="santos">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/santos.jpg" alt="Emblema da família Santos" class="content-image">
+                                        <div class="content-text">
+                                            <h2>A Origem do Sobrenome Santos: Uma Homenagem à Santidade</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Santos, é um dos mais comuns em países de língua portuguesa e carrega consigo uma rica história e simbolismo.
+                                                </p>
+                                                <h4>A Conexão com a Santidade</h4>
+                                                <p>
+                                                    A origem do sobrenome Santos está diretamente ligada à fé católica. Acredita-se que inicialmente ele era atribuído a pessoas que nasciam no dia de Todos os Santos (1º de novembro), uma data importante no calendário religioso. Essa prática era comum na Idade Média, especialmente entre a nobreza ibérica.
+                                                </p>
+                                                <h4>Outras Teorias</h4>
+                                                <p>
+                                                    Além da ligação com o dia de Todos os Santos, outras teorias sobre a origem do sobrenome Santos também são consideradas:
+                                                </p>
+                                                <p>
+                                                    Homenagem a santos específicos: Em alguns casos, o sobrenome Santos pode ter sido adotado em homenagem a um santo em particular, como São Pedro ou São Paulo.
+                                                </p>
+                                                <p>
+                                                    Indicação de local: Em algumas regiões, o sobrenome Santos pode ter sido utilizado para indicar a origem de uma pessoa, como alguém que vivia próximo a uma igreja dedicada a um santo.
+                                                </p>
+                                                <p>
+                                                    Conversão ao cristianismo: Muitos judeus convertidos ao cristianismo durante a Inquisição adotaram sobrenomes cristãos, como Santos, para se integrar à sociedade.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Com o tempo, o sobrenome Santos se espalhou por toda a Península Ibérica e, posteriormente, para as colônias portuguesas, como o Brasil. Sua popularidade pode ser explicada por diversos fatores:   
+                                                </p>
+                                                <p> 
+                                                    Religiosidade: A forte influência da Igreja Católica na sociedade ibérica contribuiu para a disseminação do sobrenome Santos.
+                                                </p>
+                                                <p>
+                                                    Distinção social: Em alguns casos, o sobrenome era utilizado para distinguir membros da nobreza ou de famílias influentes.
+                                                </p>
+                                                <p>
+                                                    História: Assim como o sobrenome Silva, muitos escravizados também receberam o sobrenome Santos.
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="souza">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/sousa.jpg" alt="Emblema da família Souza" class="content-image">
+                                        <div class="content-text">
+                                            <h2>A Origem do Sobrenome Souza: Uma Jornada pelas "Terras de Sousa"</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Souza, é um dos mais comuns em países de língua portuguesa e carrega consigo uma história rica e interessante.
+                                                </p>
+                                                <h4>A Conexão com as "Terras de Sousa"</h4>
+                                                <p>
+                                                    A origem do sobrenome Souza está diretamente ligada a um local específico: as "Terras de Sousa", uma região em Portugal, próximo ao rio Sousa. Acredita-se que o nome do rio tenha origem na palavra latina "saxa", que significa "pedras" ou "rochas".
+                                                </p>
+                                                <p>
+                                                    Com o tempo, as pessoas que viviam nessas terras começaram a adotar o nome do local como sobrenome, dando origem ao Souza. A beleza natural da região, com suas montanhas e rios, pode ter contribuído para a escolha desse nome tão evocativo.
+                                                </p>
+                                                <h4>Outras Teorias</h4>
+                                                <p>
+                                                    Embora a teoria mais aceita seja a ligação com as "Terras de Sousa", existem outras hipóteses sobre a origem do sobrenome:
+                                                </p>
+                                                <p>
+                                                    Origem romana: Alguns estudiosos sugerem que o sobrenome Souza possa ter uma origem romana, sendo uma forma aportuguesada da palavra latina "saxa".
+                                                </p>
+                                                <p>
+                                                    Homenagem a um ancestral: É possível que o sobrenome tenha sido adotado em homenagem a um ancestral com características relacionadas a rochas ou pedras.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Com as grandes navegações e a colonização, o sobrenome Souza se espalhou por diversos países, principalmente em Portugal e Brasil. A nobreza portuguesa, em particular, contribuiu para a disseminação do sobrenome, que era visto como um símbolo de status e tradição.
+                                                </p> 
+                                                <h4>O Sobrenome Souza Nos Dias Atuais</h4>
+                                                <p>
+                                                    Hoje, o sobrenome Souza é um dos mais comuns em países de língua portuguesa, especialmente no Brasil. Ele carrega consigo uma história rica e uma conexão com a natureza e com a história de Portugal.
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="oliveira">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/oliveira.jpg" alt="Emblema da família Oliveira" class="content-image">
+                                        <div class="content-text">
+                                            <h2>A Origem do Sobrenome Oliveira: Uma História Ligada à Natureza</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Oliveira, assim como Silva e Santos, é um dos mais comuns em países de língua portuguesa e carrega consigo uma rica história e simbolismo.
+                                                </p>
+                                                <h4>A Conexão com a Oliveira</h4>
+                                                <p>
+                                                    A origem do sobrenome Oliveira é bastante clara e está diretamente ligada à árvore oliveira, um símbolo de paz, sabedoria e prosperidade em diversas culturas. Acredita-se que o sobrenome tenha sido atribuído inicialmente a pessoas que cultivavam oliveiras, produziam azeite ou viviam em regiões onde essa árvore era abundante.
+                                                </p>
+                                                <h4>A Importância da Oliveira</h4>
+                                                <p>
+                                                    A oliveira é uma árvore de grande importância histórica e cultural. Ela era sagrada para os gregos e romanos, sendo associada à deusa Atena. O azeite de oliva era utilizado em rituais religiosos, na culinária e na medicina.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Com o tempo, o sobrenome Oliveira se espalhou por toda a Península Ibérica e, posteriormente, para as colônias portuguesas, como o Brasil. Sua popularidade pode ser explicada por diversos fatores:
+                                                <p> 
+                                                    Importância econômica: A produção de azeite era uma atividade econômica importante em muitas regiões, o que contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                                <p>
+                                                    Símbolo de status: A oliveira era associada à riqueza e à prosperidade, tornando o sobrenome Oliveira um símbolo de status social.
+                                                </p>
+                                                <p>
+                                                    Conexão com a terra: O sobrenome Oliveira estabelecia uma ligação forte entre a pessoa e a terra, reforçando os laços familiares e comunitários.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pereira">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/pereira.jpg" alt="Emblema da família Pereira" class="content-image">
+                                        <div class="content-text">
+                                            <h2>A Origem do Sobrenome Pereira: Uma Jornada pela História</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Pereira, assim como Silva, Santos e Oliveira, é um dos mais comuns em países de língua portuguesa e carrega consigo uma rica história e simbolismo.
+                                                </p>
+                                                <h4>A Conexão com a Pereira</h4>
+                                                <p>
+                                                    A origem mais aceita para o sobrenome Pereira está ligada a um topônimo, ou seja, ao nome de um lugar. Acredita-se que ele tenha surgido da Quinta de Pereira, localizada em Vermoim, no norte de Portugal. Essa quinta era um solar da família Pereira, e o sobrenome passou a ser adotado por seus descendentes.
+                                                </p>
+                                                <h4>Outras Teorias</h4>
+                                                <p>
+                                                    Além da ligação com a Quinta de Pereira, outras teorias sobre a origem do sobrenome Pereira também são consideradas:
+                                                </p>
+                                                <p>
+                                                    Origem sefardita: Uma corrente aponta que o sobrenome Pereira foi adotado por muitos judeus convertidos ao catolicismo (cristãos-novos) para fugir da perseguição.
+                                                </p>
+                                                <p>
+                                                    Origem romana: Alguns estudiosos sugerem que o sobrenome possa ter uma origem romana, relacionada a alguma característica do fundador da família.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Com o tempo, o sobrenome Pereira se espalhou por toda a Península Ibérica e, posteriormente, para as colônias portuguesas, como o Brasil. Sua popularidade pode ser explicada por diversos fatores:
+                                                <p> 
+                                                    Nobreza: A família Pereira era considerada uma das mais antigas e nobres da Península Ibérica, o que contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                                <p>
+                                                    Casamentos: Através de casamentos estratégicos, o sobrenome Pereira se espalhou por diversas famílias nobres.
+                                                <p>
+                                                    Migrações: A migração de portugueses para outras regiões, como o Brasil, contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="rodrigues">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/rodrigues.jpg" alt="Emblema da família Rodrigues" class="content-image">
+                                        <div class="content-text">
+                                            <h2>O Sobrenome Rodrigues: Uma Jornada História Real</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    Rodrigues, um dos sobrenomes mais comuns em países de língua portuguesa, carrega consigo uma rica história e um significado profundo.
+                                                </p>
+                                                <h4>A Origem Germânica</h4>
+                                                <p>
+                                                    A origem do sobrenome Rodrigues remonta à época da invasão dos visigodos na Península Ibérica. O nome deriva do germânico "Roderick", que significa "governante glorioso" ou "rei poderoso". Com a chegada dos visigodos, muitos nomes germânicos foram incorporados à língua e à cultura locais, e "Roderick" tornou-se bastante popular.
+                                                </p>
+                                                <h4>A Formação do Sobrenome</h4>
+                                                <p>
+                                                    O sufixo "-es" em Rodrigues indica um patronímico, ou seja, um sobrenome formado a partir do nome do pai. Portanto, Rodrigues significa literalmente "filho de Rodrigo". Essa prática de adotar o nome do pai como sobrenome era comum na época medieval e contribuiu para a formação de muitos sobrenomes ainda hoje utilizados.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Com o passar dos séculos, o sobrenome Rodrigues se espalhou por toda a Península Ibérica e, posteriormente, para as colônias portuguesas, como o Brasil. Sua popularidade pode ser explicada por diversos fatores:   
+                                                <p> 
+                                                    Prestigio: O nome Rodrigo era associado a líderes e figuras importantes, conferindo prestígio aos que o portavam.
+                                                </p>
+                                                <p>
+                                                    Casamentos: Através de casamentos estratégicos, o sobrenome Rodrigues se espalhou por diversas famílias nobres.
+                                                </p>
+                                                <p>
+                                                    Migrações: A migração de portugueses para outras regiões, como o Brasil, contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fernandes">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/fernandes.jpg" alt="Emblema da família Fernandes" class="content-image">
+                                        <div class="content-text">
+                                            <h2>Fernandes: Uma Homenagem Patrona</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    Fernandes é um sobrenome bastante comum em países de língua portuguesa, especialmente em Portugal e Brasil. Sua origem é relativamente simples e está diretamente ligada a um nome de batismo muito popular ao longo da história.
+                                                </p>
+                                                <h4>A Origem do Nome</h4>
+                                                <p>
+                                                    Fernando: O sobrenome Fernandes é um patronímico, ou seja, deriva diretamente de um nome de batismo. Neste caso, "Fernandes" significa literalmente "filho de Fernando".
+                                                </p>
+                                                <p>
+                                                    Fernando: O nome Fernando tem origem germânica e significa "paz", "paz de Deus" ou "viajante pacífico". Era um nome bastante comum na Europa medieval, especialmente entre a nobreza.
+                                                </p>
+                                                <h4>A Formação do Sobrenome</h4>
+                                                <p>
+                                                    Com o tempo, tornou-se comum adicionar o sufixo "-es" aos nomes de batismo para indicar filiação. Assim, "Fernando" se transformou em "Fernandes". Essa prática era comum em diversas culturas e línguas, e contribuiu para a formação de muitos sobrenomes ainda hoje utilizados.
+                                                </p>
+                                                <h4>Disseminação e Popularidade</h4>
+                                                <p>
+                                                    A popularidade do nome Fernando e a prática de criar sobrenomes patronímicos contribuíram para a ampla disseminação do sobrenome Fernandes. Ele se espalhou por toda a Península Ibérica e, posteriormente, para as colônias portuguesas, como o Brasil.   
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="almeida">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/almeida.jpg" alt="Emblema da família Almeida" class="content-image">
+                                        <div class="content-text">
+                                            <h2>Almeida: Uma Origem Toponímica</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    Almeida é um sobrenome bastante comum em países de língua portuguesa, especialmente em Portugal e no Brasil. Sua origem é toponímica, ou seja, está relacionada a um lugar.
+                                                </p>
+                                                <h4>A Origem Geográfica</h4>
+                                                <p>
+                                                    Al-Ma'ida: A palavra "Almeida" tem raízes árabes e significa "a mesa", "colina" ou "campo plano". Essa palavra era comumente usada para designar lugares altos ou planícies.
+                                                </p>
+                                                <p>
+                                                    Portugal: Em Portugal, existem várias localidades com o nome Almeida, o que sugere que muitas famílias adotaram o nome do lugar onde viviam como sobrenome.
+                                                </p>
+                                                <h4>Diferentes Teorias sobre a Origem</h4>
+                                                <p>
+                                                    Existem algumas teorias sobre a origem específica do sobrenome Almeida:
+                                                </p>
+                                                <p>
+                                                    Al-Ma'ida: A teoria mais aceita é que o sobrenome tenha se originado da palavra árabe "Al-Ma'ida", devido à presença de localidades com esse nome em Portugal.
+                                                </p>
+                                                <p>
+                                                    Dinastia de Abrantes: Outra teoria relaciona o sobrenome Almeida à Dinastia de Abrantes, uma das mais antigas famílias nobres de Portugal.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    A disseminação do sobrenome Almeida se deu através de diversos fatores:   
+                                                <p> 
+                                                    Toponímia: A existência de várias localidades com o nome Almeida contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                                <p>
+                                                    Nobreza: A associação do sobrenome à Dinastia de Abrantes conferiu prestígio e contribuiu para sua disseminação entre a nobreza.
+                                                </p>
+                                                <p>
+                                                    Migrações: A migração de portugueses para outras regiões, como o Brasil, contribuiu para a disseminação do sobrenome.
+                                                </p>
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="costa">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/costa.jpg" alt="Emblema da família Costs" class="content-image">
+                                        <div class="content-text">
+                                            <h2>Costa: Origem Marítima e Topográfica</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    O sobrenome Costa é um dos mais comuns em países de língua portuguesa e possui uma origem bastante interessante, ligada tanto ao mar quanto à geografia.
+                                                </p>
+                                                <h4>A Origem do Nome</h4>
+                                                <p>
+                                                    Toponímia: A principal origem do sobrenome Costa está relacionada à palavra latina "costa", que significa "costa" ou "litoral". Muitas pessoas que viviam próximas ao mar ou em regiões costeiras adotaram o nome do lugar onde habitavam como sobrenome.
+                                                </p>
+                                                <p>
+                                                    Características físicas: Em alguns casos, o sobrenome Costa pode ter sido atribuído a pessoas que possuíam alguma característica física relacionada à palavra "costa", como por exemplo, uma cicatriz ou marca na lateral do corpo.
+                                                </p>
+                                                <h4>Disseminação e Popularidade</h4>
+                                                <p>
+                                                    A disseminação do sobrenome Costa se deu por diversos fatores:
+                                                </p>
+                                                <p>
+                                                    Migrações: Com o passar dos séculos, muitas pessoas se mudaram para outras regiões, levando consigo seus sobrenomes. O sobrenome Costa, por estar ligado ao litoral, foi especialmente comum entre aqueles que se mudaram para regiões costeiras.
+                                                </p>
+                                                <p>
+                                                    Casamentos: Através de casamentos, o sobrenome Costa se espalhou por diversas famílias, contribuindo para sua ampla disseminação.
+                                                </p>
+                                                <p>
+                                                    Nobreza: Em alguns casos, o sobrenome Costa foi adotado por famílias nobres, o que conferiu prestígio e contribuiu para sua disseminação.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="lima">
+                                <div class="row">
+                                    <div class="content-item">
+                                        <img src="./images/emblemas/lima.jpg" alt="Emblema da família Lima" class="content-image">
+                                        <div class="content-text">
+                                            <h2>O Sobrenome Lima: Uma Jornada Pelas Terras</h2>
+                                            <div id="paragrafo-sobre">
+                                                <p>
+                                                    Lima é um sobrenome bastante comum em países de língua portuguesa, especialmente no Brasil e em Portugal. Sua origem é rica em história e possui diversas teorias a respeito.
+                                                </p>
+                                                <h4>Origem Toponímica</h4>
+                                                <p>
+                                                    A principal teoria sobre a origem do sobrenome Lima o associa a um topônimo, ou seja, a um lugar. Existem algumas possibilidades:
+                                                </p>
+                                                <p>
+                                                    Rio Lima: Uma das teorias mais comuns relaciona o sobrenome Lima ao rio Lima, localizado no norte de Portugal e na Galícia, Espanha. Este rio era de grande importância na época medieval e muitas famílias que viviam em suas proximidades adotaram o nome do rio como sobrenome.
+                                                </p>
+                                                <p>
+                                                    Localidades: Existem outras localidades com o nome Lima em Portugal e na Espanha, o que reforça a ideia de que o sobrenome tenha se originado de um lugar.
+                                                </p>
+                                                <h4>Outras Possibilidades</h4>
+                                                <p>
+                                                    Língua latina: Alguns estudiosos sugerem que o sobrenome Lima possa ter origem na palavra latina "limes", que significa "limite", "fronteira" ou "caminho".
+                                                </p>
+                                                <p>
+                                                    Homenagem a santos específicos: Em alguns casos, o sobrenome Santos pode ter sido adotado em homenagem a um santo em particular, como São Pedro ou São Paulo.
+                                                </p>
+                                                <p>
+                                                    Origem árabe: Outra teoria, menos provável, sugere uma origem árabe para o sobrenome Lima, associando-o a alguma palavra árabe com significado similar.
+                                                </p>
+                                                <h4>A Disseminação do Sobrenome</h4>
+                                                <p>
+                                                    Nobreza: O sobrenome Lima esteve associado a algumas famílias nobres, o que contribuiu para sua disseminação entre a aristocracia.   
+                                                <p> 
+                                                    Migrações: Com o passar dos séculos, muitas pessoas se mudaram para outras regiões, levando consigo seus sobrenomes. O sobrenome Lima, por estar ligado a lugares de importância histórica, foi especialmente comum entre aqueles que se mudaram para outras regiões de Portugal e para o Brasil.
+                                                </p>
+                                                <p>
+                                                    Casamentos: Através de casamentos, o sobrenome Lima se espalhou por diversas famílias, contribuindo para sua ampla disseminação.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="busca" class="pt-5 pb-5 background">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-title text-center"> <span class="text-colored">Pesquise</span> o seu Sobrenome</h1>
+                </div>
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-7 mb-5 search-bar">
+                        <input type="text" placeholder="Digite seu sobrenome" id="campo-pesquisa">
+                        <button class="button-pesquisa" onclick="pesquisar()" type="submit">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pesquisa" class="container">
+
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-title text-center">Fale <span class="text-colored">conosco</span></h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua Mensagem</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="clearfix">
+                <div class="container mb-5 pt-4 pb-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Raízes dos Nomes</h5>
+                            <p>&copy; 2024 Raízes dos Nomes. Todos os direitos reservados.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Links Úteis</h5>
+                            <ul>
+                                <li><a href="#sobre">Início</a></li>
+                                <li><a href="#nome">Nomes</a></li>
+                                <li><a href="#sobrenome">Sobrenomes</a></li>
+                                <li><a href="#busca">Pesquisa</a></li>
+                                <li><a href="#fale-conoesco">Fale Conosco</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Redes Sociais</h5>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
