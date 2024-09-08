@@ -100,7 +100,7 @@ body {
 }
 
 .content-text {
-    max-width: 600px; /* Ajuste a largura do texto conforme necessário */
+    max-width: 600px;
     text-align:justify;
     margin-left: 16%;
 }
@@ -201,4 +201,121 @@ footer .fab {
     font-size: 24px;
     color: #fff;
     transition: color 0.3s ease;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 5%;
+    }
+
+    #paragrafo-nomes {
+        font-size: 20px;
+        text-align:justify;
+        margin-left: 3%;
+    }
+
+    .content-text {
+        max-width: 600px;
+        text-align:justify;
+        margin-left: 3%;
+    }
+
+    .content-image {
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        margin-left: 20%;
+    }
+
+    #pesquisa img {
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        margin-left: 20%;
+    }
+
+    #pesquisa p, h3 {
+        max-width: 600px;
+        text-align:justify;
+        font-family: "Merriweather Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width: 640px) {
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 1%;
+    }
+
+    .button-pesquisa {
+        background-color: #2a9d8f;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #pesquisa img {
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        margin-left: 10%;
+    }
+
+    #pesquisa p, h3 {
+        max-width: 600px;
+        text-align:justify;
+        font-family: "Merriweather Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 3%;
+    }
+
+    .content-text {
+        max-width: 300px;
+        text-align:justify;
+        margin-left: 3%;
+    }
+
+    .content-image {
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        margin-left: 10%;
+    }
+
+    #paragrafo-nomes {
+        font-size: 20px;
+        text-align:justify;
+        margin-left: 3%;
+    }
 }
